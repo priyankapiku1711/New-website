@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News website</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="logo">
+            </div>
+                <ul>
+                    <li><a href="#">World</a></li>
+                    <li><a href="#">India</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Entertainment</a></li>
+                </ul>
+        
+    </nav>
+        <div class="container">
+            Current time is <span id="time"></span>
+        </div>
+        <script>
+            console.log(" date and time ");
+            let now = new Date();
+            console.log(now);
+
+            setInterval(updateTime, 1000);
+
+            function updateTime() {
+                time.innerHTML = new Date();
+            }
+        </script>
+
+        <section id="services-container">
+            <h1 class="h-primary center"></h1>
+            <div id="services">
+                <div class="box">
+                    <h2 class="h-secondary center">PM Modi lauds record 1 crore vaccination doses in single day</h2>
+                    <p class="center">India on Friday administered a record 1 crore vaccine doses (Covid-19), the ministry of health and family welfare announced. Prime Minister Narendra Modi lauded the record vaccination numbers. </p>
+                </div>
+                <div class="box">
+                    <h2 class="h-secondary center">Cheteshwar Pujara's punch keeps India in the Headingley Test</h2>
+                    <p class="center">Cheteshwar Pujara gives poker face a rap on its knuckles. He is unconsciously unobtrusive, an antithesis of a hyper-expressive India team that chortles at every beaten edge or wicket.</p>
+                </div>
+            </div>
+        </section>
+        <section id="newscontainer">
+            <div class="h-secondary center">
+
+                <div id="newscontainer">
+                    <div class="boxx">
+                
+                        <h1 class="h-secondary center">Biden told another terrorist attack likely in Kabul: White House</h1>
+                        <img src="img.webp" alt="">
+                        <p class="center" style ="margin-top:-182px;width:343px;">
+                            US President Joe Biden was told by his national security advisers on Friday that another terrorist attack is likely in Kabul and the next few days of this mission to evacuate American and allied personnel and Afghan partners “will be the most dangerous period to date”
+                            The commanders also briefed the US president on the operational plans to develop Islamic State-Khorasan targets.</p>
+                    </div>
+                </div>
+        </section>
+
+        <footer>
+            <div class="center">
+                www.priyanka@.com|All right reversed.
+            </div>
+        </footer>
+
+</body>
+
+</html>
